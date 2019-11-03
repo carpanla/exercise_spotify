@@ -7,9 +7,8 @@ html {
 }
 
 .header {
-    border: solid 1px #fabada;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -37,10 +36,130 @@ html {
 }
 
 .hero {
-    margin-top: 80px;
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 70vh;
     background-color: rgb(80, 155, 245);
+    & .text{
+        padding: 20px;
+        font-size: 23px;
+        color: white;
+        font-weight: 700;
+        padding-top: 50px;
+        & .subt {
+            font-size: 18px;
+        }
+    }
+    & .button{
+        position: relative;
+        top: -20px;
+        & .btn {
+            width: 85%;
+            align-self: center;
+            height: 40px;
+            margin-left: 20px;
+            border-radius: 30px;
+            background-color: green;
+            border-color: green;
+            color: white;
+        }
+        & .small_letter{
+            font-size: 10px;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.main {
+    width: 100vw;
+    & .question {
+        padding: 30px;
+        font-size: 30px;
+        & .quest {
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    & .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        & .music{
+            align-items: flex-start;
+            font-size: 12px;
+            & .corchea{
+                width: 35%; 
+            }
+            & h2, p {
+                display: inline-flex;
+                margin: 5px 0;
+                margin-left: 40%;
+                position: relative;
+                top: -50%;
+            }
+            
+            
+        }
+        & .advert {
+            align-items: flex-start;
+            font-size: 12px;
+            & .no_adverts {
+                width: 35%; 
+            }
+            & h2, p {
+                display: inline-flex;
+                margin: 5px 0;
+                margin-left: 40%;
+                position: relative;
+                top: -50%;
+            }
+        }
+        & .listen {
+            align-items: flex-start;
+            font-size: 12px;
+            & .img_listen {
+                width: 35%; 
+            }
+            & h2, p {
+                display: inline-flex;
+                margin: 5px 0;
+                margin-left: 40%;
+                position: relative;
+                top: -50%;
+            }
+        }
+        & .jump {
+            align-items: flex-start;
+            font-size: 12px;
+            & .img_jump {
+                width: 35%; 
+            }
+            & h2, p {
+                display: inline-flex;
+                margin: 5px 0;
+                margin-left: 40%;
+                position: relative;
+                top: -50%;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: black;
+    width: 100vw;
+    color: white;
+    & .footer_wrapper{
+        display: flex;
+        justify-content: space-between;
+        & .conditions{
+            font-size: 10px;
+            & .cond {
+                list-style: none;
+            }
+        }
+    }
 }
 
 
