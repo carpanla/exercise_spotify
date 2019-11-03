@@ -1,0 +1,47 @@
+html {
+    font-family: $text-font;
+}
+.wrapper {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.header {
+    border: solid 1px #fabada;
+    background-color: black;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    & .logo {
+        background: url('../images/logo.png');
+        height: 40px;
+        width: 135px;
+        background-size: cover;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    & .menu{
+        margin-top: 28px;
+        margin-right: 20px;
+    }
+    & .ham {
+        display: block;
+        width: 33px;
+        height: 4px;
+        background-color: white;
+        margin: 6px; 
+    }
+}
+
+.hero {
+    margin-top: 80px;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(80, 155, 245);
+}
+
+
+
